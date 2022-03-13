@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class MainTest {
     @Test
-    public void numberEqualsTest() {
+    public void doubleEqualsTest() {
         Assertions.assertTrue(Main.doubleEquals(0.1 + 0.2, 0.3));
         Assertions.assertTrue(Main.doubleEquals(0.7 + 0.2, 0.9));
         Assertions.assertFalse(Main.doubleEquals(0.1, 0.2));
