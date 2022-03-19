@@ -6,15 +6,15 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
+        double abs;
         if (a > b) {
-            if (a - b <= 0.000001) {
-                return true;
-            }
+            abs = a -b;
         }
         if (a < b) {
-            if (b - a <= 0.000001) {
-                return true;
-            }
+            abs = b - a;
+        }
+        if (abs < 0.000001) {
+            return true;
         }
         return false;
     }
