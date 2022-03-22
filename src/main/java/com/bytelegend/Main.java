@@ -7,6 +7,6 @@ public class Main {
 
     public static boolean doubleEquals(double a, double b) {
         double epsilon = 0.000001d;
-        return ath.abs(a - b) < epsilon;
+        return Math.abs(a - b) < epsilon;
     }
 }
