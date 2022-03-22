@@ -6,6 +6,11 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        double epsilon = 0.000001d;
+        if (Math.abs(a - b) < epsilon) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
