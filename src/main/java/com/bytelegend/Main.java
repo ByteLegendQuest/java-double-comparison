@@ -6,7 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        float THRESHOLD = 0.00001f;
-        return Math.abs(a - b) <= THRESHOLD;
+        // float THRESHOLD = 0.00001f;
+        return Math.abs(a - b) <= 0.00001f;
     }
 }
