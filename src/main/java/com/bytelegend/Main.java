@@ -6,7 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        boolean bool = Math.abs(a - b) < (1e-10);
-        return bool;
+        return a == b;
     }
 }
