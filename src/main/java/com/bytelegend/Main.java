@@ -8,6 +8,10 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return Math.abs(a - b) < EPSILON;;
+        if((a - b) > 0){
+            return (a - b) < EPSILON;
+        }else{
+            return (b - a) < EPSILON;
+        }
     }
 }
