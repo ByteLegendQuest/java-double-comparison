@@ -1,7 +1,5 @@
 package com.bytelegend;
 
-import static java.lang.Double.valueOf;
-
 public class Main {
     public static double EPSILON = 0.0000001;
     public static void main(String[] args) {
