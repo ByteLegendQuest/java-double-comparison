@@ -6,7 +6,7 @@ public class Main {
     }
 
      public static boolean doubleEquals(double a, double b) {
-        DecimalFormat df = new DecimalFormat("#0.00000000");
+        DecimalFormat df = new DecimalFormat("#0.000000");
         String x = df.format(a);
         double y = Double.parseDouble(x);
         return y == b ;
