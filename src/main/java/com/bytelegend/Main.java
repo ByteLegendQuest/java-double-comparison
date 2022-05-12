@@ -9,6 +9,6 @@ public class Main {
         DecimalFormat df = new DecimalFormat("#0.00000000");
         String x = df.format(a);
         double y = Double.parseDouble(x);
-        return y == b;
+        return y == b ;
     }
 }
