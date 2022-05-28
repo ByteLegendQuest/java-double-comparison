@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        return abs(a - b) < (a + b)/1_000_000;
     }
 }
