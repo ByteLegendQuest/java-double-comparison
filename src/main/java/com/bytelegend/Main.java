@@ -5,7 +5,8 @@ package com.bytelegend;
     }
 
     public static boolean doubleEquals(double a, double b) {
-        if ( a - b < .001) {
+        double comparison = .000000001d;
+        if (Math.abs(a - b) < comparison) {
             return true;
         } else {
             return false;
