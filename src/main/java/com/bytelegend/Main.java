@@ -6,6 +6,11 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        double comparison = .000000001d;
+        if (Math.abs(a - b) < comparison) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
