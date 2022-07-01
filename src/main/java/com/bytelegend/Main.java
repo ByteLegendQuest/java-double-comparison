@@ -9,4 +9,5 @@ public class Main {
         double num = 0.00000000001;
         return Math.abs (a - b) < num;
     }
+}
     
