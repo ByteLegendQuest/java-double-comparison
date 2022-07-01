@@ -1,4 +1,5 @@
-   package com.bytelegend;
+package com.bytelegend;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -6,11 +7,11 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        float num = 0.001;
-        if (Match.abs(( a - b ) < num)) {
-            return ture;
-        }else{
-            return flase;
+        double num  = 0.001;
+        if (Math.abs(a-b)<num){
+            return true;
+        }else {
+            return false;
         }
     }
 }
