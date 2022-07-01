@@ -6,5 +6,5 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        double num = 0.00000000001
+        double num = 0.00000000001;
         return ((a - b) < num );
