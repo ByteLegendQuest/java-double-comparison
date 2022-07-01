@@ -8,9 +8,9 @@ public class Main {
 
     public static boolean doubleEquals(double a, double b) {
         double num  = 0.1;
-        if (Math.abs(a - b) < num){
+        if (Math.abs(a - b) < num) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
