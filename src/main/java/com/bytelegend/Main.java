@@ -7,7 +7,7 @@ public class Main {
 
     public static boolean doubleEquals(double a, double b) {
         float num = 0.001;
-        if(Match.abs((a-b)< num)) {
+        if (Match.abs(( a - b ) < num)) {
             return ture;
         }else{
             return flase;
