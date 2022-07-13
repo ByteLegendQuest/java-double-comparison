@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return Math.abs ( a - b ) < Math.pow(2, -52);
+        return a == b;
     }
 }
