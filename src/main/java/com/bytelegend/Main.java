@@ -6,8 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        double epsilon = 1e-10d;
-        double absVal = (a < b)? (b - a) : (a > b)? (a - b) : (a - b);
-        return (absVal < epsilon)? true : false;
+        return a == b;
     }
 }
