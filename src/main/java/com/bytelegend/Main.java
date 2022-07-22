@@ -6,6 +6,10 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        if(a-b<i){
+           return true;
+       }else {
+           return false;
+       }    
     }
 }
