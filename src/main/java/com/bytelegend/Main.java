@@ -6,7 +6,8 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        if(a-b<i){
+        double epsilon = 1e-10;
+        if(a - b < epsilon){
            return true;
        }else {
            return false;
