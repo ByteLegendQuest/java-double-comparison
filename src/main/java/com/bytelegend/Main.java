@@ -6,6 +6,9 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        NumberFormat format = NumberFormat.getNumberInstance();
+        String aa = format.format(a);
+        String bb = format.format(b);
+        return a.equals(b);
     }
 }
