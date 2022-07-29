@@ -1,5 +1,4 @@
 package com.bytelegend;
-import java.text.NumberFormat;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +6,8 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        NumberFormat format = NumberFormat.getNumberInstance();
-        String aa = format.format(a);
-        String bb = format.format(b);
+        String aa = new String(a);
+        String bb = new String(b);
         return a.equals(b);
     }
 }
