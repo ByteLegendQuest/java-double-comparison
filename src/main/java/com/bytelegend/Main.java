@@ -6,8 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        String aa = new String(a);
-        String bb = new String(b);
-        return a.equals(b);
+        return a - b == 0d;
     }
 }
