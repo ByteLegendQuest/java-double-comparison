@@ -6,8 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        long al = Double.doubleToLongBits(a);
-        long bl = Double.doubleToLongBits(b);
-        return al == bl || Math.abs(al - bl) <= 1;
+        return a == b;
     }
 }
