@@ -5,11 +5,7 @@ public class Main {
         System.out.println("0.1+0.2==0.3: " + doubleEquals(0.1 + 0.2, 0.3));
     }
 
-    public static double eps = 0.000000000001;
     public static boolean doubleEquals(double a, double b) {
-        if (-eps <= a - b && a - b <= eps)
-            return true;
-        else
-            return false;
+        return a == b;
     }
 }
