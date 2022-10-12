@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a - b < 0.0000000001 || a - b > -0.00001;
+        return Math.abs(a - b) < 1e-6;
     }
 }
