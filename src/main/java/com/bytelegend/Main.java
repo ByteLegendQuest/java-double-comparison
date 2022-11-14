@@ -6,6 +6,13 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        double dlt, epsl = 1.0E-10;
+        if (a < b) {
+            dlt = b - a;
+        }
+        else {
+            dlt = a - b;
+        }
+        return dlt < epsl;
     }
 }
