@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a.doubleEquals(b);
+        return a.equals(b);
     }
 }
