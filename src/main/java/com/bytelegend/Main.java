@@ -6,7 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        public static boolean doubleEquals(double a, double b) {
         Float aFloat = new Float(a);
         Float bFloat = new Float(b);
         int i = aFloat.compareTo(bFloat);
@@ -15,6 +14,5 @@ public class Main {
             flag = true;
         }
         return flag;
-    }
     }
 }
