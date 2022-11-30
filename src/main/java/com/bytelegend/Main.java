@@ -6,6 +6,13 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        Float aFloat = new Float(a);
+        Float bFloat = new Float(b);
+        int i = aFloat.compareTo(bFloat);
+        Boolean flag =false;
+        if(i == 0){
+            flag = true;
+        }
+        return flag;
     }
 }
