@@ -6,8 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        int t1 = (int) a * 10000;
-        int t2 = (int) b * 10000;
-        return t1 == t2;
+        return Math.abs(a - b) < 0.0000001;
     }
 }
