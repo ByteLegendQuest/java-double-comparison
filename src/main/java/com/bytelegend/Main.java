@@ -6,6 +6,8 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
+        int t1 = a * 10000;
+        int ti = b * 10000;
         return a == b;
     }
 }
