@@ -5,7 +5,7 @@ public class Main {
         System.out.println("0.1+0.2==0.3: " + doubleEquals(0.1 + 0.2, 0.3));
     }
 
-    public static boolean doubleEquals(Double a, Double b) {
-        return a.toString().equals(b.toString());
+    public static boolean doubleEquals(double a, double b) {
+        return (a - b) <= 0.1;
     }
 }
