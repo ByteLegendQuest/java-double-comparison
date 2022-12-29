@@ -6,11 +6,10 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        String str = String.valueOf(a);
-        if (str.compareTo(String.valueOf(b)) == 0) {
-            return true;
+        if (a > b) {
+            return (a - b) < 0.000001;
         } else {
-            return false;
+            return (b - a) < 0.000001;
         }
     }
 }
