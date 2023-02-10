@@ -6,7 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        if (a-b =< 0.01 && b-a =< 0.01) {
+        if (a-b =< 0.001 && b-a =< 0.001) {
             return true;
         }
         else {
