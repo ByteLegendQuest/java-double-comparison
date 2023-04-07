@@ -6,6 +6,6 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a.Compare(b) == 0;
+        return a.compare(b) == 0;
     }
 }
