@@ -6,6 +6,10 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        int tem = a -b;
+        if(-1 <= tem*1000_000 <= 1) {
+            return true;
+        }
+        return false;
     }
 }
