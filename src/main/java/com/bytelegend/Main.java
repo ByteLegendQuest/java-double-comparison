@@ -6,10 +6,8 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        int tem = a -b;
-        if(-1 <= tem*1000_000 <= 1) {
-            return true;
-        }
-        return false;
+        double tem = 0.0000001;
+        return Math.abs(a-b) < tem;
+        
     }
 }
