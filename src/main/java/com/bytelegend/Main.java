@@ -6,6 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
+        Double epsilon = 0.0000001;
         return a - b < 0.0000000000000001;
     }
 }
