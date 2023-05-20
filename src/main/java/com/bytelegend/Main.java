@@ -7,6 +7,6 @@ public class Main {
 
     public static boolean doubleEquals(double a, double b) {
         double div = a / b;
-        return div < 1.000001 && div > 0.999999;
+        return div < 1.0000000001 && div > 0.9999999999;
     }
 }
