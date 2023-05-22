@@ -8,6 +8,6 @@ public class Main {
     public static boolean doubleEquals(double a, double b) {
         double epsilon = 0.000001; // Valor de epsilon (tolerancia)
         double difference = Math.abs(a - b); // Diferencia absoluta entre a y b
-        return difference < epsilon || difference < epsilon * Math.max(Math.abs(a), Math.abs(b));
+        return difference < epsilon || difference < (epsilon * Math.max(Math.abs(a), Math.abs(b)));
     }
 }
