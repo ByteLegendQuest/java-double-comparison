@@ -7,7 +7,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return BigDecimal.valueOf(a).setScale(20, BigDecimal.ROUND_HALF_UP).doubleValue() 
-        == BigDecimal.valueOf(b).setScale(20, BigDecimal.ROUND_HALF_UP).doubleValue();
+        return BigDecimal.valueOf(a).setScale(10, BigDecimal.ROUND_HALF_UP).doubleValue() 
+        == BigDecimal.valueOf(b).setScale(10, BigDecimal.ROUND_HALF_UP).doubleValue();
     }
 }
