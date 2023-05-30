@@ -6,7 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        double sum = a + b;
+        double sum = 0.3;
         double error = 0.0001;
         return Math.abs(sum - (a + b)) < error;
     }
