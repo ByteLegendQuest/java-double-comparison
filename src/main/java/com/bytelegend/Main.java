@@ -1,4 +1,5 @@
 package com.bytelegend;
+import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,6 +7,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        return BigDecimal.valueOf(a).setScale(10, BigDecimal.ROUND_HALF_UP).doubleValue() 
+        == BigDecimal.valueOf(b).setScale(10, BigDecimal.ROUND_HALF_UP).doubleValue();
     }
 }
