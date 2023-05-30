@@ -6,7 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        if(Double.compare(a, b) == 0) {
+        if (Double.compare(a, b) == 0) {
             return true;
         } else if(Double.compare(a, b) < 0) {
             return false;
