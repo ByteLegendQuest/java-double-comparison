@@ -6,6 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return Math.floor(a) == Math.floor(b);
+        return BigDecimal.valueOf(a).setScale(5, BigDecimal.ROUND_HALF_UP).doubleValue() ==
+                BigDecimal.valueOf(b).setScale(5, BigDecimal.ROUND_HALF_UP).doubleValue();
     }
 }
