@@ -6,6 +6,7 @@ public class Main {
     }
 
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        double eps = 1e-9;
+        return Math.abs(a - b) < eps;
     }
 }
